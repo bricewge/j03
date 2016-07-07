@@ -6,11 +6,11 @@
 /*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/07 12:56:49 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/07 16:29:36 by bwaegene         ###   ########.fr       */
+/*   Updated: 2016/07/07 16:50:42 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_ft(int *********nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
