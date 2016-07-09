@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   jour02.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
+/*   By: bwaegene <brice.wge@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/07 16:52:49 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/07 20:59:02 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/06 12:58:24 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/08 01:10:18 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int i;
+#include <stdio.h>
 
-	i = *a;
-	*a = *b;
-	*b = i;
+void	ft_putstr(char * str);
+
+int main()
+{
+	ft_putstr("lol");
+	return(0);
 }

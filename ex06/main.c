@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   jour02.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
+/*   By: bwaegene <brice.wge@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/07 23:47:45 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/08 00:24:20 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/06 12:58:24 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/08 08:27:10 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b)
-{
-	int tmp1;
-	int tmp2;
+#include <stdio.h>
 
-	tmp1 = *a / *b;
-	tmp2 = *a % *b;
-	*a = tmp1;
-	*b = tmp2;
+int	ft_strlen(char * str);
+
+int		main()
+{
+	int		result;
+
+	result = ft_strlen("xptdr");
+	printf("%d", result);
+	return(0);
 }

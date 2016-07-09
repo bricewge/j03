@@ -1,16 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/07 12:56:49 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/07 16:50:42 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/07 20:53:06 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/07 20:57:27 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int *********nbr)
+
+#include <stdio.h>
+
+void	ft_swap(int *a, int	*b);
+
+int	main()
 {
-	*********nbr = 42;
+int a;
+int b;
+int *ptra;
+int *ptrb;
+
+a = 13;
+b = 42;
+ptra = &a;
+ptrb = &b;
+
+printf("%d", *ptra);
+printf("%d", *ptrb);
+printf("%s", "\n");
+
+ft_swap(ptra, ptrb);
+printf("%d", *ptra);
+printf("%d", *ptrb);
 }

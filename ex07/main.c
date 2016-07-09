@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   jour02.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
+/*   By: bwaegene <brice.wge@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/08 00:55:54 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/08 01:13:03 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/06 12:58:24 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/08 15:35:35 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_putchar(char c);
+#include <stdio.h>
 
-void	ft_putstr(char *str)
+char		*ft_strrev(char * str);
+
+int		main()
 {
-	int		i;
+	char	*test;
 
-	i = 0;
-	while (str[i])
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+	test = "abcde";
+	printf("%s", test);
+	printf("%s",  ft_strrev(test));
+	return(0);
 }
+
+
+
+
+
+
+
+
+
+

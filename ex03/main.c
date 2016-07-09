@@ -1,21 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/08 00:55:54 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/08 08:30:25 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/07 21:47:56 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/07 21:59:13 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
-{
-	int		i;
+#include <stdio.h>
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
+void	ft_div_mod(int a, int b, int *div, int *mod);
+
+int main()
+{
+	int a;
+	int b;
+	int divide;
+	int rest;
+	int *div;
+	int *mod;
+
+	a = 16;
+	b =3;
+	div = &a;
+	mod = &b;
+	divide = a/b;
+	rest = a%b;
+
+	ft_div_mod(a, b, div, mod);
+	printf("%d", *div);
+	printf("%d", *mod);
 }

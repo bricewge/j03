@@ -1,38 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*   main.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bwaegene <brice.wge@gmail.com>             +#+  +:+       +#+        */
+/*   By: bwaegene <brice.wge@gmail.com>              +#+  +:+       +#+       */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/08 00:55:54 by bwaegene          #+#    #+#             */
-/*   Updated: 2016/07/08 16:11:02 by bwaegene         ###   ########.fr       */
+/*   Created: 2016/07/06 12:58:24 by bwaegene          #+#    #+#             */
+/*   Updated: 2016/07/07 14:46:38 by bwaegene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*ft_strrev(char *str)
+#include <stdio.h>
+
+void	ft_ft(int	*nbr);
+
+int		main()
 {
-	int		i;
-	int		j;
-	char	*tmp;
-	char	*rev;
+	int i;
+	int *ptr;
 
-	i = 0;
-	j = 0;
-	tmp = str;
+	i = 24;
+    ptr = &i;
 
-	while (str[i])
-		i++;
-
-	rev[i] = '\n';
-	while (i > 0)
-	{
-		rev[j] = str[i-1];
-		j++;
-		i--;
-	}
-
-	str = rev;
-	return (str);
+	ft_ft(ptr);
+	printf("%d", i);
 }
-
